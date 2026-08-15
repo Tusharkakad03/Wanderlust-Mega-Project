@@ -45,9 +45,9 @@ pipeline {
             }
         }
 
-        stage("OWASP: Dependency check"){
-            steps{
-                script{
+        stage('OWASP: Dependency Check') {
+            steps {
+                script {
                     owasp_dependency()
                 }
             }
